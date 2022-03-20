@@ -6,7 +6,7 @@ with right confirguration you can use this as a normal backup script to file or 
 
 
 ## Env values 
-MONGO_HOST1="10.0.3.4"
+MONGO_HOST1="10.0.3.4" /n
 MONGO_HOST2=""
 MONGO_HOST3=""
 MONGO_HOST_DR1="10.0.3.5"

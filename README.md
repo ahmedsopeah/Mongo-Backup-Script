@@ -16,5 +16,6 @@ TIMESTAMP=`date +%F-%H`
 BACKUP_FILE_PATH="/home/test2/backup-$TIMESTAMP"   
 DR_DIRECOTRY="/home/test2"  
 DR_SOURCE="/home/test2/backup-$TIMESTAMP"   
-USER="test2"   # this value for SSH connection to the other site 
+#### this value for SSH connection to the other site 
+USER="test2"   
 SSHPASSWORD=password  this is the SSh password  

@@ -5,7 +5,10 @@ with right configuration you can use this as a normal backup script to file or t
 
 
 if you have a single node, keep the value of Host 2 and 3 empty
-
+## Backup to File
+comment the below part to keep your backup file 
+# Remove backup folder
+rm -rf $BACKUP_FILE_PATH
 
 ## Env values 
 MONGO_HOST1="10.0.3.4"

@@ -2,18 +2,24 @@
 echo done0
 set -e
 echo done1
+# Backup FROM (cluster mention all nodes) (single node mention the single node only)
+# MONGODB For production cluster or the main nodes that you want to take the backup from 
 MONGO_HOST1="10.0.3.4"
 MONGO_HOST2=""
 MONGO_HOST3=""
+# backup to server (cluster mention all nodes) (single node mention the single node only)
 MONGO_HOST_DR1="10.0.3.5"
 MONGO_HOST_DR2=""
 MONGO_HOST_DR3=""
 TIMESTAMP=`date +%F-%H`
+# SSH user and password to another site
 USER="test2"
+SSHPASSWORD=password
+# Backup file name 
 BACKUP_FILE_PATH="/home/test2/backup-$TIMESTAMP"
 DR_DIRECOTRY="/home/test2"
 DR_SOURCE="/home/test2/backup-$TIMESTAMP"
-SSHPASSWORD=password
+
 echo done2
 error_exit()
 {
